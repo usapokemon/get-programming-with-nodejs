@@ -1,5 +1,10 @@
-***
-NOTICE: As of 3/25/2024, the following packages have been upgraded due to MongoDB version 7.0.7 and Node.js Driver upgrade to 6.5.0, and node.js language version V.20.10.1 compatibility issues.
+*** MongoDB Access API Changed in Version 7.0.7 - callback functions deprecated
+NOTICE: As of 3/25/2024, the following packages have been upgraded:
+MongoDB -->  7.0.7, 
+Node.js Driver --> 6.5.0, and 
+node.js language version --> V.20.10.1 
+
+To solve the compatibility issues and issues such as "the callback functions are deprecated", the sample code for the book "The Get Programming with Node.js" needs to be modified to reflect the following environment:
 
 >mongod --version
 7.0.7
@@ -10,7 +15,7 @@ v20.10.1
 |--- mongoose@6.9.2
   |-- mongodb@4.13.0
 
-The major changes is due to the deprecation of callback functions in MongoDB accessing API functions. In lessons_13 - lessons_14, the changes are needed to use async/await.
+The major changes is due to the deprecation of callback functions in MongoDB accessing API functions. In lessons_13 - lessons_14, the changes are needed to use async/await. There are also minor changees, such as connect options that are no longer supported, e.g., useNewURL, useUnifiedTopology, and useCreatrIndex, will be removed. Adding {family:4} to support IPv4 addressing mode, e.g., localhoast:3000.
 
 ***
 NOTICE: As of *11/20/20*, The following packages have been upgraded due to dependency vulnerabilities:
