@@ -5,7 +5,7 @@ MongoDB -->  7.0.7,
 Node.js Driver --> 6.5.0, and 
 node.js language version --> V.20.10.1 
 ```
-To solve the compatibility issues and issues such as "the callback functions are deprecated", the sample code for the book "The Get Programming with Node.js" needs to be modified to reflect the following environment:
+To solve the compatibility issues and issues such as "the callback functions are deprecated", the sample code for the book "The Get Programming with Node.js" needs to be modified to become compatible with the following environment:
 ```
 mongod --version
 7.0.7
