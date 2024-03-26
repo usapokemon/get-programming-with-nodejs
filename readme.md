@@ -1,5 +1,5 @@
-*** MongoDB Access API Changed - callback functions deprecated
-NOTICE: As of 3/25/2024, the following packages have been upgraded:
+*** MongoDB Accessing API Changed
+>NOTICE: As of 3/25/2024, the following packages have been upgraded:
 ```
 MongoDB -->  7.0.7, 
 Node.js Driver --> 6.5.0, and 
