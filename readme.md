@@ -1,5 +1,18 @@
 ***
+NOTICE: As of 3/25/2024, the following packages have been upgraded due to MongoDB version 7.0.7 and Node.js Driver upgrade to 6.5.0, and node.js language version V.20.10.1 compatibility issues.
 
+>mongod --version
+7.0.7
+>node --version
+v20.10.1
+>npm list mongodb
+|--- mongodb@6.5.0
+|--- mongoose@6.9.2
+  |-- mongodb@4.13.0
+
+The major changes is due to the deprecation of callback functions in MongoDB accessing API functions. In lessons_13 - lessons_14, the changes are needed to use async/await.
+
+***
 NOTICE: As of *11/20/20*, The following packages have been upgraded due to dependency vulnerabilities:
 
 mongodb --> 3.6.3
