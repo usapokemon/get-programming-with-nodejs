@@ -1,0 +1,23 @@
+
+
+
+ 
+<div class="container">
+  
+  <div>
+  <span>
+    <h1>Our Courses</h1>
+    <span class="col-6 center">
+     <img src="images/fruit.jpg" alt=""  >
+   </span>
+  </div>
+  <div class="col-6 center">
+    <span>
+  <% allCourses.forEach(course => {%> 
+    <h5> <%= course.name %> </h5>
+    <span>$ <%= course.price %> </span>
+  <% }) %>
+  </span>
+  </div>
+  
+</div>
