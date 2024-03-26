@@ -29,7 +29,7 @@ app.use( bodyParser.urlencoded( {
   extended: false
 } ) );
 app.use( bodyParser.json() );
-console.log("Pass 1")
+//console.log("Pass 1")
 
 app.get( '/', ( req, res ) => {
   console.log("Pass /")
@@ -39,11 +39,11 @@ app.get( '/', ( req, res ) => {
 app.get( '/courses', homeController.showCourses );
 app.get( '/contact', homeController.showSignUp );
 app.post( '/contact', homeController.postedContactForm );
-console.log("Pass 2")
+//console.log("Pass 2")
 app.use( errorController.pageNotFoundError );
 app.use( errorController.internalServerError );
 
 app.listen( app.get( 'port' ), () => {
   console.log( `Server running at http://localhost:${app.get('port')}` );
 } );
-console.log("Pass 3")
+//console.log("Pass 3")
