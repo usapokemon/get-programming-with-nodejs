@@ -18,6 +18,8 @@ npm list mongodb
 ```
 The major changes is due to the deprecation of callback functions in MongoDB accessing API functions. In lessons_13 - lessons_14, the changes are needed to use async/await. There are also minor changes, such as connect options that are no longer supported, e.g., useNewURL, useUnifiedTopology, and useCreatrIndex. Adding {family:4} to support IPv4 addressing mode, e.g., localhoast:3000.
 
+NOTE: Some debugging statements using console.log were not totally commented out.
+
 ***
 NOTICE: As of *11/20/20*, The following packages have been upgraded due to dependency vulnerabilities:
 
