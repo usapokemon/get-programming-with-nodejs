@@ -7,7 +7,7 @@ const express = require('express'),
   errorController = require('./controllers/errorController'),
   bodyParser = require('body-parser'),
   mongoose = require('mongoose');
-console.log('pass 1');
+//console.log('pass 1');
 
 async function run() {
   await mongoose.connect('mongodb://localhost/recipe_db',
@@ -27,7 +27,7 @@ async function run() {
     //email: 'yang@gmail.com',
     zipCode: '19383'
   });
-  console.log('pass 3');
+  //console.log('pass 3');
   var savedDocument =
     await
       subscriber1.save()
@@ -44,7 +44,7 @@ async function run() {
 run();
 
 //subscriber1.deleteOne({ name: "Cheer Yang" }, function (err) {});
-console.log('pass 4');
+//console.log('pass 4');
 
 app.set('port', process.env.PORT || 3000);
 
@@ -56,21 +56,21 @@ app.use(bodyParser.urlencoded({
   extended: false
 }));
 app.use(bodyParser.json());
-console.log('pass 5 ');
+//console.log('pass 5 ');
 app.get('/', (req, res) => {
   res.render('index');
 });
-console.log('pass 6');
+//console.log('pass 6');
 app.get('/courses', homeController.showCourses);
-console.log('pass 7');
+//console.log('pass 7');
 app.get('/contact', homeController.showSignUp);
-console.log('pass 8');
+//console.log('pass 8');
 app.post('/contact', homeController.postedContactForm);
-console.log('pass 9');
+//console.log('pass 9');
 app.use(errorController.pageNotFoundError);
-console.log('pass 10');
+//console.log('pass 10');
 app.use(errorController.internalServerError);
-console.log('pass 11');
+//console.log('pass 11');
 app.listen(app.get('port'), () => {
   console.log(`Server running at http://localhost:${app.get('port')}`);
 });
